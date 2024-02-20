@@ -3,6 +3,10 @@ from config import config
 from src.parser import HHParser
 
 
+"""Модуль для создания и удаления базы данных и таблиц, а также загрузки данных 
+из класса HHParser в базу данных."""
+
+
 def terminate_connections(db_name):
     try:
         # Connect to the default 'postgres' database to terminate connections
@@ -108,8 +112,3 @@ def insert_data_into_tables(db_name):
                 ))
     cur.close()
     conn.close()
-
-
-create_database('course_work_5')
-create_tables('course_work_5')
-insert_data_into_tables('course_work_5')

@@ -1,5 +1,7 @@
 import requests
 
+"""Парсер hh.ru"""
+
 
 class HHParser:
     def __init__(self):
@@ -73,8 +75,3 @@ class HHParser:
                 "published_at": vacancy["published_at"]
             })
         return filter_data
-
-
-# hh = HHParser()
-# filtered_vacancies = hh.filter_vacancies()
-#
